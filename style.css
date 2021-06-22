@@ -22,7 +22,7 @@ img {
     --header-height: 4.5rem;
 
     /* COLORS */
-    --hue: 159;
+    --hue: 154;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -98,6 +98,7 @@ h1 {
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
+    width: 100%;
 }
 
 nav {
@@ -105,6 +106,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
