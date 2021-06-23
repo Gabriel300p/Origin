@@ -2,18 +2,42 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Assets/fonts/style.css">
+
     <link rel="stylesheet" href="/style.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>OriginSix</title>
 </head>
 <body>
     <header id="header">
-        <nav class="container">
+        <nav class="container show">
+            <!-- Logo -->
             <a class="logo" href="#">Beauty<span>salon.</span></a>
-            <div>...</div>
+            <!-- /Logo -->
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="tittle" href="#home">Início</a></li>
+                    <li><a class="tittle" href="#about">Sobre</a></li>
+                    <li><a class="tittle" href="#serviços">Serviços</a></li>
+                    <li><a class="tittle" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="tittle" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <!-- /Menu -->
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
         </nav>
     </header>
 
@@ -24,7 +48,7 @@
                     <img src="/img/header-cabeleireira.jpg" alt="Cabeleireira fazendo o cabelo de uma cliente">
                 </div>
                 <div class="text">
-                    <h1>Saúde natural para os seus cabelos</h1>
+                    <h2 class="tittle">Saúde natural para os seus cabelos</h2>
                     <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
                     <a class="button" href="#">Agendar um horário</a>
                 </div>
@@ -33,13 +57,27 @@
 
         <div class="divider-1"></div>
 
-        <section class="section">
-            <div class="container">Outra Section</div>
+        <section class="section" id="about">
+            <div class="container grid">Sobre</div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container grid">Services</div>
+        </section>
+        
+        <section class="section" id="testimonials">
+            <div class="container grid">Depoimentos</div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container grid">Contato</div>
         </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
