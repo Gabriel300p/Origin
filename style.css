@@ -26,7 +26,7 @@ img {
     --header-height: 4.5rem;
 
     /* COLORS */
-    --hue: 154;
+    --hue: 134;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -38,7 +38,7 @@ img {
 
 /* ============ BASE ============ */
 
-.tittle {
+.title {
     font: 700 1.875rem "Poppins", sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
@@ -71,8 +71,17 @@ body {
     height: 1px;
     background: linear-gradient(
     270deg, 
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+    );
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+    270deg, 
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
     );
 }
 /* ============ LAYOUT ============ */
@@ -89,6 +98,18 @@ body {
 
 .section {
     padding: 5rem 0;
+}
+
+.section .title{
+    margin-bottom: 1rem;
+}
+
+.section header {
+    margin-bottom: 4rem;
+}
+
+.section header strong {
+    color: var(--base-color);
 }
 
 #header {
@@ -253,11 +274,76 @@ nav.show div.icon-close {
     text-align: center;
 }
 
-#home .text h1 {
+#home .text h2 {
     margin-bottom: 1rem;
 }
 
 #home .text p {
     margin-bottom: 2rem;
     max-width: 100%;
+}
+
+/* ============ SOBRE ============ */
+
+#about {
+    background: #FFFFFF;
+}
+
+#about .container{
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+}
+
+#about .image img {
+    position: relative;
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* ============ SERVIÇOS ============ */
+
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+}
+
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
