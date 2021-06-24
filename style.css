@@ -26,7 +26,7 @@ img {
     --header-height: 4.5rem;
 
     /* COLORS */
-    --hue: 134;
+    --hue: 254;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -116,8 +116,6 @@ body {
     border-bottom: 1px solid #E4E4E4; 
     margin-bottom: 2rem;
     display: flex;
-    width: 100%;
-
     position: fixed;
     top: 0;
     left: 0;
