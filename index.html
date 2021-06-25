@@ -1,142 +1,273 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/Assets/fonts/style.css">
+    <link rel="stylesheet" href="/Assets/fonts/style.css" />
 
-    <link rel="stylesheet" href="/style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/style.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>OriginSix</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <nav class="container">
-            <!-- Logo -->
-            <a class="logo" href="#">Beauty<span>salon.</span></a>
-            <!-- /Logo -->
+      <nav class="container">
+        <!-- Logo -->
+        <a class="logo" href="#">Beauty<span>salon.</span></a>
+        <!-- /Logo -->
 
-            <!-- Menu -->
-            <div class="menu">
-                <ul class="grid">
-                    <li><a class="title" href="#home">Início</a></li>
-                    <li><a class="title" href="#about">Sobre</a></li>
-                    <li><a class="title" href="#services">Serviços</a></li>
-                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
-                    <li><a class="title" href="#contact">Contato</a></li>
-                </ul>
-            </div>
-            <!-- /Menu -->
+        <!-- Menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /Menu -->
 
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-close"></div>
-        </nav>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
     </header>
 
     <main>
+      <!-- Home -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="/assets/img/header-cabeleireira.jpg"
+              alt="Cabeleireira fazendo o cabelo de uma cliente"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
+            <p>
+              Um salão exclusivo em São Paulo, especializado em tratamentos
+              naturais.
+            </p>
+            <a class="button" href="#">Agendar um horário</a>
+          </div>
+        </div>
+      </section>
+      <!-- /Home -->
 
-        <!-- Home -->
-        <section class="section" id="home">
-            <div class="container grid">
-                <div class="image">
-                    <img src="/assets/img/header-cabeleireira.jpg" alt="Cabeleireira fazendo o cabelo de uma cliente">
-                </div>
-                <div class="text">
-                    <h2 class="title">Saúde natural para os seus cabelos</h2>
-                    <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-                    <a class="button" href="#">Agendar um horário</a>
-                </div>
+      <div class="divider-1"></div>
+
+      <!-- Sobre -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="/assets/img/body-cabeleireira.jpg"
+              alt="Três Cabeleireiras sorrindo"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+              aspernatur sint quis quidem aliquid veniam debitis dolore
+              voluptatum minima ipsum explicabo illum quasi qui at rem alias
+              deserunt blanditiis accusamus.
+            </p>
+
+            <br />
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              maiores molestias recusandae fuga optio voluptatem, accusantium
+              impedit at alias deserunt accusamus laudantium culpa, excepturi
+              soluta consequuntur ipsam cumque placeat quo.
+            </p>
+
+            <br />
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              maxime nemo nulla recusandae veritatis quia ratione labore debitis
+              quis deleniti eaque est explicabo cupiditate vitae magnam, eum
+              sunt minima temporibus!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /Sobre -->
+
+      <div class="divider-2"></div>
+
+      <!-- Serviços -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Terapia completa para couro cabeludo e fios, protegendo todos os
+                tipos de cabelos, inclusive os longos e finos.
+              </p>
             </div>
-        </section>
-        <!-- /Home -->
-
-        <div class="divider-1"></div>
-
-
-        <!-- About -->
-        <section class="section" id="about">
-            <div class="container grid">
-                <div class="image">
-                    <img src="/assets/img/body-cabeleireira.jpg" alt="Três Cabeleireiras sorrindo">
-                </div>
-                <div class="text">
-                    <h2 class="title">Sobre nós</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aspernatur sint quis quidem aliquid veniam debitis dolore voluptatum minima ipsum explicabo illum quasi qui at rem alias deserunt blanditiis accusamus.</p>
-
-                    <br>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores molestias recusandae fuga optio voluptatem, accusantium impedit at alias deserunt accusamus laudantium culpa, excepturi soluta consequuntur ipsam cumque placeat quo.</p>
-
-                    <br>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime nemo nulla recusandae veritatis quia ratione labore debitis quis deleniti eaque est explicabo cupiditate vitae magnam, eum sunt minima temporibus!</p>
-                </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                A nossa equipe é repleta de profissionais renomados, famosos por
+                lançarem tendências com cortes diferenciados e clássicos.
+              </p>
             </div>
-        </section>
-        <!-- /About -->
-
-        <div class="divider-2"></div>
-
-        <!-- Services -->
-        <section class="section" id="services">
-            <div class="container grid">
-                <header>
-                    <h2 class="title">Serviços</h2>
-                    <p>Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
-                </header>
-                <div class="cards grid">
-                    <div class="card">
-                        <i class="icon-woman-hair"></i>
-                        <h3 class="title">Terapia capilar</h3>
-                        <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon-trim"></i>
-                        <h3 class="title">Cortes</h3>
-                        <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
-                    </div>
-                    <div class="card">
-                        <i class="icon-cosmetic"></i>
-                        <h3 class="title">Treinamentos</h3>
-                        <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo 
-                            de cabelo.</p>
-                    </div>
-                </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Treinamentos</h3>
+              <p>
+                O beautysalon conta com diversos tratamentos naturais e
+                totalmente veganos, para qualquer tipo de cabelo.
+              </p>
             </div>
-        </section>
-        <!-- /Services -->
+          </div>
+        </div>
+      </section>
+      <!-- /Serviços -->
 
-        <div class="divider-1"></div>
+      <div class="divider-1"></div>
 
-        <!-- Testimonials -->
-        <section class="section" id="testimonials">
-            <div class="container grid">
-                <header class="title">
-                    <h2>Depoimentos de quem já passou por aqui</h2>
-                </header>
+      <!-- Depoimentos -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                    aliquid officia ea itaque dolor quibusdam neque fugit
+                    praesentium repellat. Dolor tempore molestiae voluptatem
+                    architecto est tempora accusamus, sed ex quasi.
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/img/lady_01.jpg"
+                      alt="Foto de Wanessa Souza"
+                    />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                    aliquid officia ea itaque dolor quibusdam neque fugit
+                    praesentium repellat. Dolor tempore molestiae voluptatem
+                    architecto est tempora accusamus, sed ex quasi.
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/img/lady_02.jpg"
+                      alt="Foto de Debora Laranjeira"
+                    />
+                    Debora Laranjeira
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                    aliquid officia ea itaque dolor quibusdam neque fugit
+                    praesentium repellat. Dolor tempore molestiae voluptatem
+                    architecto est tempora accusamus, sed ex quasi.
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/img/lady_03.jpg"
+                      alt="Foto de Amanda Andrade"
+                    />
+                    Amanda Andrade
+                  </cite>
+                </blockquote>
+              </div>
             </div>
-        </section>
-        <!-- /Testimonials -->
 
-        <div class="divider-2"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Depoimentos -->
 
-        <section class="section" id="contact">
-            <div class="container grid">Contato</div>
-        </section>
+      <div class="divider-2"></div>
+
+      <!-- Contato -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=+551111965800803&text=Olá Mundo" target="_blank" class="button"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 11 96580-0803</li>
+              <li><i class="icon-map-pin"></i> Rua Aeródromo, 64</li>
+              <li><i class="icon-mail"></i> gabriel.andrade200p@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /Contato -->
     </main>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
+    <!-- Swapper -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main -->
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
