@@ -32,7 +32,7 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 242;
+  --hue: 280;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -41,6 +41,8 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  /* Fonts */
+  --title-font-size: 2.25rem;
 }
 
 /*============  BASE ============ */
@@ -94,6 +96,19 @@ body {
     hsla(var(--hue), 36%, 57%, 1)
   );
 }
+
+/*============ RESPONSIVO ============ */
+/* Extra Large Devices: 1200 > */
+
+
+/* Large Devices: 1023 > */
+
+/* large Devices: 992 > */
+@media (min-width: 992px) {
+
+}
+
+/* Medium Devices: 767 > */
 
 /*============  LAYOUT ============*/
 .container {
@@ -151,6 +166,10 @@ main {
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 /*============  NAVIGATION ============ */
@@ -458,3 +477,36 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
+
+/*============ FOOTER ============ */
+
+footer {
+  background: var(--base-color);
+}
+
+footer .brand .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+
